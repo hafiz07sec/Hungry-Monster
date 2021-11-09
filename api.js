@@ -8,11 +8,11 @@ const searchMeal = () => {
         const noMealfound = document.getElementById("noMealfound");
         noMealfound.innerHTML = ``;
 
-        const mealsDiv = document.getElementById("meals");
-        const mealInfo = ``;
-
         const mealInfoSection = document.getElementById('meal-info-section');
         mealInfoSection.innerHTML = ``;
+
+        const mealDetailsSection = document.getElementById('meal-details-section');
+        mealDetailsSection.innerHTML = ``;
 
 
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s= ${mealInput}`
@@ -46,9 +46,9 @@ const totalMeals = (data, mealInput) => {
 
 }
 const displayMeal = (meal, mealInput) => {
-    const mealsDiv = document.getElementById("meals");
+    const mealsDiv = document.getElementById("meal-info-section");
     const mealDiv = document.createElement('div');
-    mealDiv.className = 'meals';
+    mealDiv.className = 'meal-info-section';
 
 
     const mealInfo = `
