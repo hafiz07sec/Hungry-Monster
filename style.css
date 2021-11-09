@@ -1,0 +1,9 @@
+#meals{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.formSection{
+   padding-bottom: 20px;
+}
